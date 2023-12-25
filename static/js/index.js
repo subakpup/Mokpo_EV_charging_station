@@ -1,12 +1,9 @@
 document.addEventListener('DOMContentLoaded', function () {
-    var submitButton = document.getElementById('submitButton');
-    if (submitButton) {
-        submitButton.addEventListener('click', function (event) {
-            // Prevent the default form submission behavior
+    const reservationButton = document.getElementById('reservationButton');
+    if (reservationButton) {
+        reservationButton.addEventListener('click', function (event) {
             event.preventDefault();
-            
-            // Redirect to the next page (replace 'naver_map.html' with the actual URL)
-            window.location.href = '/naver_map';  // 수정된 부분
+            window.location.href = '/map'; // 이동하고자 하는 URL 경로
         });
     }
 });

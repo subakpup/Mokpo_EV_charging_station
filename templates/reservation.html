@@ -1,32 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>예약 시스템</title>
-</head>
-<body>
-    <div class="reservation-container">
-        <h2>예약 시스템</h2>
-        <form id="reservationForm">
-            <label for="name">이름:</label>
-            <input type="text" id="name" name="name" required>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>목포시 전기차 충전소 예약</title>
+        <link rel="stylesheet" href="static/css/reservation.css">
+        <link rel="icon" type="image/x-icon" href="/static/assets/favicon.ico" />
+    </head>
+    <body>
+        <div class="reservation-container">
+            <h2>예약 시스템</h2>
+            <form id="reservationForm">
+                <label for="name">핸드폰 번호:</label>
+                <input type="text" id="number" name="number" required>
 
-            <label for="date">날짜:</label>
-            <input type="date" id="date" name="date" required>
+                <label for="date">날짜:</label>
+                <input type="date" id="date" name="date" required>
 
-            <label for="time">시간:</label>
-            <input type="time" id="time" name="time" required>
+                <label for="time">시간:</label>
+                <input type="time" id="time" name="time" required>
 
-            <button type="button" onclick="submitReservation()">예약</button>
-        </form>
-    </div>
-
-    <script>
-        function submitReservation() {
-            // 여기에 예약을 서버로 전송하는 로직을 추가할 수 있습니다.
-            alert('예약이 완료되었습니다!');
-        }
-    </script>
-</body>
+                <button type="button" onclick="submitReservation()">예약</button>
+            </form>
+        </div>
+    </body>
 </html>

@@ -4,10 +4,8 @@ from fastapi.staticfiles import StaticFiles
 
 app = FastAPI()
 
-# /static 경로에 정적 파일 서빙
 app.mount("/static", StaticFiles(directory="static"), name="static")
 
-# 기존 엔드포인트 정의
 @app.get("/")
 def index():
     return FileResponse("templates/index.html")
